@@ -3,7 +3,7 @@
 About
 --
 
-`jobproc` is provide the system like function with job API for vim8 and neovim.
+`jobproc` is provide the `system()` like function with job (async) API for vim8 and neovim.
 
 
 Example
@@ -32,6 +32,35 @@ if executable('keyboardSwitcher')
     autocmd InsertLeave * :call josbproc#system('keyboardSwitcher select U.S.')
   augroup END
 endif
+```
+
+Installation
+---
+
+your `~/.vimrc` or `~/.config/nvim/init.vim`.
+
+### vim-plug [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug)
+
+```vim
+Plug 'maxmellon/jobproc'
+```
+
+### dein.vim [https://github.com/Shougo/dein.vim](https://github.com/Shougo/dein.vim)
+
+```vim
+call dein#add('maxmellon/jobproc')
+```
+
+### neobundle.vim [https://github.com/Shougo/neobundle.vim](https://github.com/Shougo/neobundle.vim)
+
+```vim
+NeoBundle 'maxmellon/jobproc'
+```
+
+### Vundle.vim [https://github.com/VundleVim/Vundle.vim](https://github.com/VundleVim/Vundle.vim)
+
+```vim
+Plugin 'maxmellon/jobproc'
 ```
 
 LICENSE
